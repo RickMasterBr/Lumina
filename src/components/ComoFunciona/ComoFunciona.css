@@ -1,0 +1,97 @@
+.funciona-section {
+  padding: 100px 20px;
+  background-color: #fdfcf9;
+  color: #1d1d1d;
+}
+
+.funciona-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.funciona-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #8c52ff;
+  margin-bottom: 20px;
+}
+
+.funciona-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.funciona-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .funciona-grid {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.funciona-box {
+  flex: 1;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.funciona-percent {
+  font-size: 36px;
+  font-weight: 800;
+  color: #8c52ff;
+  margin-bottom: 12px;
+}
+
+.funciona-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .funciona-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.funciona-button {
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.funciona-button.primary {
+  background-color: #8c52ff;
+  color: white;
+}
+
+.funciona-button.primary:hover {
+  background-color: #6c3fd4;
+}
+
+.funciona-button.secondary {
+  background-color: #fff;
+  border: 2px solid #8c52ff;
+  color: #8c52ff;
+}
+
+.funciona-button.secondary:hover {
+  background-color: #f0eaff;
+}

@@ -1,0 +1,51 @@
+.aprendizagem-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  color: #1d1d1d;
+}
+
+.aprendizagem-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aprendizagem-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #8c52ff;
+  margin-bottom: 20px;
+}
+
+.aprendizagem-tagline {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.aprendizagem-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.aprendizagem-buttons {
+  margin-top: 32px;
+}
+
+.aprendizagem-button {
+  background-color: #8c52ff;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.aprendizagem-button:hover {
+  background-color: #6c3fd4;
+}
