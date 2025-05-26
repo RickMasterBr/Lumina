@@ -1,97 +1,119 @@
-.funciona-section {
+.como-section {
+  background: linear-gradient(to bottom right, #8c52ff, #6c3fd4);
+  color: white;
   padding: 100px 20px;
-  background-color: #fdfcf9;
-  color: #1d1d1d;
 }
 
-.funciona-container {
-  max-width: 900px;
+.como-container {
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
-.funciona-title {
-  font-size: 36px;
+.como-title {
+  font-size: 40px;
   font-weight: 700;
-  color: #8c52ff;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-.funciona-description {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 40px;
-  line-height: 1.7;
+.como-subtitle {
+  font-size: 18px;
+  color: #e5dbff;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
 }
 
-.funciona-grid {
+.como-etapas {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 32px;
 }
 
 @media (min-width: 768px) {
-  .funciona-grid {
+  .como-etapas {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
-.funciona-box {
+.como-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
   flex: 1;
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.funciona-percent {
-  font-size: 36px;
-  font-weight: 800;
-  color: #8c52ff;
+.como-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px);
+}
+
+.como-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px auto;
+  color: white;
+}
+
+.como-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.como-card h3 {
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 
-.funciona-buttons {
+.como-card p {
+  font-size: 15px;
+  color: #e8defc;
+  line-height: 1.5;
+}
+
+.como-buttons {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 50px;
   align-items: center;
 }
 
 @media (min-width: 500px) {
-  .funciona-buttons {
+  .como-buttons {
     flex-direction: row;
     justify-content: center;
   }
 }
 
-.funciona-button {
-  font-size: 16px;
+.como-btn {
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.funciona-button.primary {
-  background-color: #8c52ff;
-  color: white;
-}
-
-.funciona-button.primary:hover {
-  background-color: #6c3fd4;
-}
-
-.funciona-button.secondary {
-  background-color: #fff;
-  border: 2px solid #8c52ff;
+.como-btn.primary {
+  background-color: white;
   color: #8c52ff;
 }
 
-.funciona-button.secondary:hover {
+.como-btn.primary:hover {
   background-color: #f0eaff;
+}
+
+.como-btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.como-btn.secondary:hover {
+  background-color: white;
+  color: #8c52ff;
 }

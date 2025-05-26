@@ -14,31 +14,40 @@ export default function Clientes() {
 
         <div className="clientes-grid">
           <div className="cliente-card">
-            <h3 className="cliente-nome">Cliente ABCC</h3>
-            <p className="cliente-desc">
-              Fortalecimento da presença digital para gerar visibilidade e
-              conversão, com foco na geração de doações, voluntariado e
-              construção de um plano de comunicação integrado.
-            </p>
-            <button className="cliente-button">Ver Projeto</button>
+            <div className="cliente-img img-abcc" />
+            <div className="cliente-content">
+              <h3 className="cliente-nome">Cliente ABCC</h3>
+              <p className="cliente-desc">
+                Fortalecimento da presença digital para gerar visibilidade e
+                conversão, com foco na geração de doações, voluntariado e
+                construção de um plano de comunicação integrado.
+              </p>
+              <button className="cliente-button">Ver Projeto</button>
+            </div>
           </div>
 
           <div className="cliente-card">
-            <h3 className="cliente-nome">Cliente Flor de Sal</h3>
-            <p className="cliente-desc">
-              Criação de uma estratégia de marketing digital voltada para
-              aumentar a visibilidade da marca e atrair novos clientes.
-            </p>
-            <button className="cliente-button">Ver Projeto</button>
+            <div className="cliente-img img-flordesal" />
+            <div className="cliente-content">
+              <h3 className="cliente-nome">Cliente Flor de Sal</h3>
+              <p className="cliente-desc">
+                Criação de uma estratégia de marketing digital voltada para
+                aumentar a visibilidade da marca e atrair novos clientes.
+              </p>
+              <button className="cliente-button">Ver Projeto</button>
+            </div>
           </div>
 
           <div className="cliente-card">
-            <h3 className="cliente-nome">Cliente Vanilla</h3>
-            <p className="cliente-desc">
-              Desenvolvimento de uma identidade digital coesa e ações
-              direcionadas para engajamento nas redes sociais.
-            </p>
-            <button className="cliente-button">Ver Projeto</button>
+            <div className="cliente-img img-vanilla" />
+            <div className="cliente-content">
+              <h3 className="cliente-nome">Cliente Vanilla</h3>
+              <p className="cliente-desc">
+                Desenvolvimento de uma identidade digital coesa e ações
+                direcionadas para engajamento nas redes sociais.
+              </p>
+              <button className="cliente-button">Ver Projeto</button>
+            </div>
           </div>
         </div>
       </div>

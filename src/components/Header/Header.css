@@ -1,41 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 50;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  z-index: 1000;
 }
 
 .nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #8c52ff;
+/* Seções esquerda, centro e direita */
+.nav-left {
+  flex: 1;
 }
 
-.nav-links {
+.nav-center {
   display: flex;
-  gap: 24px;
-  font-size: 14px;
-  font-weight: 500;
+  justify-content: center;
+  flex: 2;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-links li a {
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Logo */
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Links */
+.nav-center li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
   text-decoration: none;
-  color: #333;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-center li a:hover {
   color: #8c52ff;
+}
+
+/* Botão Fale Conosco */
+.fale-conosco-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(to right, #7c3aed, #4c1d95);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fale-conosco-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #6d28d9, #2e1065);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-center {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-right {
+    justify-content: flex-start;
+  }
 }

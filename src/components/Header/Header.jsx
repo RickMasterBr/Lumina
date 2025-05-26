@@ -4,8 +4,11 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="logo">Lúmina</div>
-        <ul className="nav-links">
+        <div className="nav-left">
+          <div className="logo">Lúmina</div>
+        </div>
+
+        <ul className="nav-center">
           <li>
             <a href="#hero">Início</a>
           </li>
@@ -30,10 +33,13 @@ export default function Header() {
           <li>
             <a href="#feedback">Feedback</a>
           </li>
-          <li>
-            <a href="#contato">Fale Conosco</a>
-          </li>
         </ul>
+
+        <div className="nav-right">
+          <a href="#contato" className="fale-conosco-button">
+            Fale Conosco
+          </a>
+        </div>
       </nav>
     </header>
   );
