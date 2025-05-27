@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import "./Header.css";
 
 export default function Header() {
+  const [menuAberto, setMenuAberto] = useState(false);
+
   return (
     <header className="header">
       <nav className="nav">
@@ -8,7 +13,16 @@ export default function Header() {
           <div className="logo">Lúmina</div>
         </div>
 
-        <ul className="nav-center">
+        {/* Botão hamburguer visível no mobile */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuAberto(!menuAberto)}
+        >
+          ☰
+        </button>
+
+        {/* Menu de navegação central */}
+        <ul className={`nav-center ${menuAberto ? "ativo" : ""}`}>
           <li>
             <a href="#hero">Início</a>
           </li>
